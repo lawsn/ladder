@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>사다리 게임</title>
+<script type="text/javascript" src="../js/jquery/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="../js/jquery/jquery.easing.min.js"></script>
+<script type="text/javascript" src="../js/ladder-game.js"></script>
+<style>  
+#ladder-game { margin-left: 50px; }
+#ladder { width: 500px; height: 300px; }
+#ladder table { border-collapse:collapse; width: 100%; height: 100%; }  
+#ladder td { border-left:1px solid gray; border-right:1px solid gray; width: 20%; height: 10%; }
+.mascot { position: absolute; }
+.lean { border-bottom: 1px solid gray; }
+.sway { border-bottom: 2px solid red; }
+.lway { border-left: 2px solid red !important; }
+.rway { border-right: 2px solid red !important; }
+</style>
+</head>
+<body>
+
+<ul>
+	<li>사다리게임</li>
+	<li>플레이어는 6명</li>
+	<li>시~작</li>
+</ul>
+
+<div id="ladder-game">
+	<div id="player">
+		<img class="mascot" src="../img/hobbang06.gif" data-no="0" /> 
+		<img class="mascot" src="../img/hobbang06.gif" data-no="1" /> 
+		<img class="mascot" src="../img/hobbang06.gif" data-no="2" /> 
+		<img class="mascot" src="../img/hobbang06.gif" data-no="3" /> 
+		<img class="mascot" src="../img/hobbang06.gif" data-no="4" />
+		<img class="mascot" src="../img/hobbang06.gif" data-no="5" />
+	</div>
+	<div id="ladder">
+		<table>
+			<tbody>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="lean"></td>
+				<td></td>
+				<td class="lean"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class="lean"></td>
+				<td></td>
+				<td class="lean"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="lean"></td>
+				<td></td>
+				<td class="lean"></td>
+				<td></td>
+				<td class="lean"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class="lean"></td>
+				<td></td>
+				<td class="lean"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="lean"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="lean"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class="lean"></td>
+				<td></td>
+				<td class="lean"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td class="lean"></td>
+				<td></td>
+				<td class="lean"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class="lean"></td>
+				<td></td>
+				<td class="lean"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="lean"></td>
+				<td></td>
+				<td class="lean"></td>
+				<td></td>
+				<td class="lean"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+</body>
+</html>
