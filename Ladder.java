@@ -35,6 +35,13 @@ public class Ladder {
 		}
 		
 		System.out.println(sb.toString());
+		
+		System.out.println(get(0, ladder));
+		System.out.println(get(1, ladder));
+		System.out.println(get(2, ladder));
+		System.out.println(get(3, ladder));
+		System.out.println(get(4, ladder));
+		System.out.println(get(5, ladder));
 	}
 	
 	private static Random rand = new Random();
@@ -44,4 +51,19 @@ public class Ladder {
 		}
 		return false;
 	}
+	
+	public static int get(int mascot, String[][] ladder) {
+		
+		int maximum = ladder[0].length;
+		
+		for(int i=0; i<ladder.length; i++) {
+			if(mascot < maximum && "lean".equals(ladder[i][mascot])) {
+				mascot += 1;
+			}else if(mascot > 0 && "lean".equals(ladder[i][mascot - 1])) {
+				mascot -= 1;
+			}
+		}
+		
+		return mascot;
+	}	
 }
