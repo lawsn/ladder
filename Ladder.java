@@ -54,10 +54,10 @@ public class Ladder {
 	
 	public static int get(int mascot, String[][] ladder) {
 		
-		int maximum = ladder[0].length;
+		int players = ladder[0].length;
 		
 		for(int i=0; i<ladder.length; i++) {
-			if(mascot < maximum && "lean".equals(ladder[i][mascot])) {
+			if(mascot < players && "lean".equals(ladder[i][mascot])) {
 				mascot += 1;
 			}else if(mascot > 0 && "lean".equals(ladder[i][mascot - 1])) {
 				mascot -= 1;
